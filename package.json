@@ -1,0 +1,37 @@
+{
+  "name": "dino-project-namer",
+  "version": "1.0.0",
+  "description": "Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.",
+  "main": "dinos.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:edm00se/dino-sprint-namer.git"
+  },
+  "keywords": [],
+  "author": "Eric McCormick (https://edm00se.codes/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gist.github.com/c1f95db7dca9ab3939d77e436160ca22"
+  },
+  "homepage": "https://gist.github.com/c1f95db7dca9ab3939d77e436160ca22",
+  "devDependencies": {
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
+  }
+}
