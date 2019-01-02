@@ -1,17 +1,18 @@
+const { toTitleCase } = require('./util');
 const ADJECTIVE_DICTIONARY = require('./adjectives');
 const DINOSAUR_NAMES = require('./dinos');
 
 function generateRandom() {
   const adj = getRandomAdjective();
   const dino = getRandomDinosaurName();
-  return `${adj} ${dino.name}`;
+  return toTitleCase(`${adj} ${dino.name}`);
 }
 
 function generateRandomStartsWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
   const adj = getRandomAdjectiveStartingWith(startsWith);
   const dino = getRandomDinosaurNameStartingWith(startsWith);
-  return `${adj} ${dino.name}`;
+  return toTitleCase(`${adj} ${dino.name}`);
 }
 
 function getRandomFromSet(set) {
@@ -27,7 +28,7 @@ function getRandomDinosaurName() {
 }
 
 function ensureSingleStartingLetter(letter){
-  return (letter || '').charAt(0);
+  return (letter || '').charAt(0).toLowerCase();
 }
 
 function getRandomAdjectiveStartingWith(startingLetter){
@@ -38,8 +39,10 @@ function getRandomAdjectiveStartingWith(startingLetter){
 
 function getRandomDinosaurNameStartingWith(startingLetter){
   const startsWith = ensureSingleStartingLetter(startingLetter);
-  return getRandomFromSet(DINOSAUR_NAMES
-    .filter(dino => dino.name.toLowerCase().charAt(0) === startsWith));
+  const nwSet = DINOSAUR_NAMES
+    .filter(dino => (dino.name.toLowerCase().charAt(0) === startsWith));
+  const res = getRandomFromSet(nwSet);
+  return res;
 }
 
 module.exports = {
