@@ -22,17 +22,18 @@ To rebuild the array of dinosaurs from `dinos.js`:
 
 - navigate to [the A-Z listing](http://www.nhm.ac.uk/discover/dino-directory/name/name-az-all.html)
   - this must be done in a browser from the site, as they use the appropriate CORS and CSP headers to prevent fetching from another origin
-- execute: ```js
-var list = document.querySelector('.dinosaurfilter--container');
-var dinoList = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => el.innerText.trim());
-var dinoAr = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => {
-  return {
-    name: el.innerText.trim(),
-    url: el.parentElement.href
-  };
-});
-console.log(dinoAr);
-```
+- execute:
+  ```js
+  var list = document.querySelector('.dinosaurfilter--container');
+  var dinoList = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => el.innerText.trim());
+  var dinoAr = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => {
+    return {
+      name: el.innerText.trim(),
+      url: el.parentElement.href
+    };
+  });
+  console.log(dinoAr);
+  ```
 
 ### Images
 
