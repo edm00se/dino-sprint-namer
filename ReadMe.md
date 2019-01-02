@@ -13,8 +13,18 @@ npm install
 To use, invoke the CLI tool via:
 
 ```sh
-node cli.js
+node cli.js (a)
 ```
+
+Alternatively, from a *nix shell, you can invoke the CLI tool via:
+
+```sh
+./cli.js (a)
+```
+
+### Specifying Starting Letter
+
+An optional starting letter can be specified as an argument. This will cause both the adjective (first word) and dinosaur name to start with the corresponding letter.
 
 ### Updating
 
@@ -22,17 +32,18 @@ To rebuild the array of dinosaurs from `dinos.js`:
 
 - navigate to [the A-Z listing](http://www.nhm.ac.uk/discover/dino-directory/name/name-az-all.html)
   - this must be done in a browser from the site, as they use the appropriate CORS and CSP headers to prevent fetching from another origin
-- execute: ```js
-var list = document.querySelector('.dinosaurfilter--container');
-var dinoList = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => el.innerText.trim());
-var dinoAr = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => {
-  return {
-    name: el.innerText.trim(),
-    url: el.parentElement.href
-  };
-});
-console.log(dinoAr);
-```
+- in js console, execute:
+  ```js
+  var list = document.querySelector('.dinosaurfilter--container');
+  var dinoList = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => el.innerText.trim());
+  var dinoAr = Array.from(list.querySelectorAll('p.dinosaurfilter--name')).map(el => {
+    return {
+      name: el.innerText.trim(),
+      url: el.parentElement.href
+    };
+  });
+  console.log(dinoAr);
+  ```
 
 ### Images
 
