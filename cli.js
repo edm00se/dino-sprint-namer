@@ -7,9 +7,9 @@ const { generateRandom, generateRandomStartsWith } = require('./lib');
 const cli = meow(
   `
   Usage
-    $ node cli.js <letter>
+    $ node cli.js (letter)
   Example
-    $ node cli.js A
+    $ node cli.js (A)
 `,
   {
     alias: {
