@@ -28,7 +28,7 @@ function getRandomDinosaurName() {
 }
 
 function ensureSingleStartingLetter(letter) {
-  return (letter || '').charAt(0).toLowerCase();
+  return letter.charAt(0).toLowerCase();
 }
 
 function getRandomAdjectiveStartingWith(startingLetter) {

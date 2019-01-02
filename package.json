@@ -6,7 +6,8 @@
   "bin": "cli.js",
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "husky": "1.2.0",
+    "jest": "23.6.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.2"
   },
