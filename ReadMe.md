@@ -13,8 +13,18 @@ npm install
 To use, invoke the CLI tool via:
 
 ```sh
-node cli.js
+node cli.js (a)
 ```
+
+Alternatively, from a *nix shell, you can invoke the CLI tool via:
+
+```sh
+./cli.js (a)
+```
+
+### Specifying Starting Letter
+
+An optional starting letter can be specified as an argument. This will cause both the adjective (first word) and dinosaur name to start with the corresponding letter.
 
 ### Updating
 
