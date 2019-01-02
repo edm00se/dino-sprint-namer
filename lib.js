@@ -46,8 +46,6 @@ function getRandomDinosaurNameStartingWith(startingLetter){
 }
 
 module.exports = {
-  getRandomAdjective,
-  getRandomDinosaurName,
   generateRandom,
   generateRandomStartsWith
 };
