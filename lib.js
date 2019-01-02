@@ -27,20 +27,24 @@ function getRandomDinosaurName() {
   return getRandomFromSet(DINOSAUR_NAMES);
 }
 
-function ensureSingleStartingLetter(letter){
+function ensureSingleStartingLetter(letter) {
   return (letter || '').charAt(0).toLowerCase();
 }
 
-function getRandomAdjectiveStartingWith(startingLetter){
+function getRandomAdjectiveStartingWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
-  return getRandomFromSet(ADJECTIVE_DICTIONARY
-      .filter(adj => adj.toLowerCase().charAt(0) === startsWith));
+  return getRandomFromSet(
+    ADJECTIVE_DICTIONARY.filter(
+      adj => adj.toLowerCase().charAt(0) === startsWith
+    )
+  );
 }
 
-function getRandomDinosaurNameStartingWith(startingLetter){
+function getRandomDinosaurNameStartingWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
-  const nwSet = DINOSAUR_NAMES
-    .filter(dino => (dino.name.toLowerCase().charAt(0) === startsWith));
+  const nwSet = DINOSAUR_NAMES.filter(
+    dino => dino.name.toLowerCase().charAt(0) === startsWith
+  );
   const res = getRandomFromSet(nwSet);
   return res;
 }

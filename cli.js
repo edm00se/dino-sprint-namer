@@ -20,9 +20,13 @@ const cli = meow(
 );
 
 let sprintName = '';
-if( undefined === cli.input[0]){
+if (undefined === cli.input[0]) {
   sprintName = generateRandom();
-  console.log(chalk.red.bold('No starting letter specified, returning a randomly selected pairing.'));
+  console.log(
+    chalk.red.bold(
+      'No starting letter specified, returning a randomly selected pairing.'
+    )
+  );
   console.log(chalk.yellow.bold(sprintName));
 } else {
   const startingLetter = cli.input[0] || '';
