@@ -2,7 +2,7 @@
   "name": "dino-project-namer",
   "version": "1.0.0",
   "description": "Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.",
-  "main": "dinos.js",
+  "main": "lib.js",
   "bin": "cli.js",
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
