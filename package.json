@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:edm00se/dino-sprint-namer.git"
+    "url": "https://github.com/edm00se/dino-sprint-namer.git"
   },
   "keywords": [],
   "author": "Eric McCormick (https://edm00se.codes/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://gist.github.com/c1f95db7dca9ab3939d77e436160ca22"
+    "url": "https://github.com/edm00se/dino-sprint-namer/issues"
   },
-  "homepage": "https://gist.github.com/c1f95db7dca9ab3939d77e436160ca22",
+  "homepage": "https://github.com/edm00se/dino-sprint-namer",
   "dependencies": {
     "chalk": "2.4.1",
     "meow": "5.0.0"
