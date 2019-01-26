@@ -2,13 +2,13 @@ const { toTitleCase } = require('./util');
 const ADJECTIVE_DICTIONARY = require('./adjectives');
 const DINOSAUR_NAMES = require('./dinos');
 
-function generateRandom() {
+function random() {
   const adj = getRandomAdjective();
   const dino = getRandomDinosaurName();
   return toTitleCase(`${adj} ${dino.name}`);
 }
 
-function generateRandomStartsWith(startingLetter) {
+function startsWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
   const adj = getRandomAdjectiveStartingWith(startsWith);
   const dino = getRandomDinosaurNameStartingWith(startsWith);
@@ -50,6 +50,6 @@ function getRandomDinosaurNameStartingWith(startingLetter) {
 }
 
 module.exports = {
-  generateRandom,
-  generateRandomStartsWith
+  random,
+  startsWith
 };

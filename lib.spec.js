@@ -1,37 +1,35 @@
-const { generateRandom, generateRandomStartsWith } = require('./lib');
+const { random, startsWith } = require('./lib');
 
 describe('lib structure', () => {
-  it('provides expected generateRandom', () => {
-    expect(typeof generateRandom).toBe('function');
+  it('provides expected random', () => {
+    expect(typeof random).toBe('function');
   });
-  it('provides expected generateRandom', () => {
-    expect(typeof generateRandomStartsWith).toBe('function');
+  it('provides expected random', () => {
+    expect(typeof startsWith).toBe('function');
   });
 });
 
-describe('generateRandom behavior', () => {
+describe('random behavior', () => {
   it('provides string response', () => {
-    expect(typeof generateRandom() === 'string').toBe(true);
+    expect(typeof random() === 'string').toBe(true);
   });
   it('provides a two word response', () => {
-    expect(generateRandom().includes(' ')).toBe(true);
-    expect(generateRandom().match(/ /g).length).toBe(1);
+    expect(random().includes(' ')).toBe(true);
+    expect(random().match(/ /g).length).toBe(1);
   });
 });
 
-describe('generateRandomStartsWith behavior', () => {
+describe('startsWith behavior', () => {
   const sampleLetter = 'z';
   it('provides string response', () => {
-    expect(typeof generateRandomStartsWith(sampleLetter) === 'string').toBe(
-      true
-    );
+    expect(typeof startsWith(sampleLetter) === 'string').toBe(true);
   });
   it('provides a two word response', () => {
-    expect(generateRandomStartsWith(sampleLetter).includes(' ')).toBe(true);
-    expect(generateRandomStartsWith(sampleLetter).match(/ /g).length).toBe(1);
+    expect(startsWith(sampleLetter).includes(' ')).toBe(true);
+    expect(startsWith(sampleLetter).match(/ /g).length).toBe(1);
   });
   it('provides response starting both words with passed letter', () => {
-    const respWordAr = generateRandomStartsWith(sampleLetter).split(' ');
+    const respWordAr = startsWith(sampleLetter).split(' ');
     expect(respWordAr[0].charAt(0).toLowerCase() === sampleLetter).toBe(true);
     expect(respWordAr[1].charAt(0).toLowerCase() === sampleLetter).toBe(true);
   });
