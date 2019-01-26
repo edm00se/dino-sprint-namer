@@ -6,21 +6,32 @@ Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.
 ## Installation
 
 ```sh
-npm install
+npm install --global dino-sprint-namer
 ```
 
 ## Usage
 
+### Try CLI
+
+```sh
+npx dino-sprint-namer (a)
+```
+
+### CLI
+
 To use, invoke the CLI tool via:
 
 ```sh
-node cli.js (a)
+dino-sprint-namer (a)
 ```
 
-Alternatively, from a *nix shell, you can invoke the CLI tool via:
+### Module
 
-```sh
-./cli.js (a)
+```js
+const dinos = require('dino-sprint-namer');
+
+console.log('random dino: ', dinos.random());
+console.log('dino that starts with a: ', dinos.startsWith('a'));
 ```
 
 ### Specifying Starting Letter
