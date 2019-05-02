@@ -23,14 +23,15 @@
   "homepage": "https://github.com/edm00se/dino-sprint-namer",
   "dependencies": {
     "chalk": "2.4.1",
-    "meow": "5.0.0"
+    "meow": "5.0.0",
+    "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "husky": "1.2.0",
-    "jest": "23.6.0",
+    "jest": "^24.7.1",
     "lint-staged": "8.1.0",
     "prettier": "1.15.2",
-    "semantic-release": "^15.13.2"
+    "semantic-release": "^15.13.12"
   },
   "husky": {
     "hooks": {
@@ -40,8 +41,8 @@
   "lint-staged": {
     "*.js": [
       "npm run format",
-      "npm test",
-      "git add"
+      "git add",
+      "npm test"
     ]
   }
 }

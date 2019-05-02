@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
 const chalk = require('chalk');
 const meow = require('meow');
 const { random, startsWith } = require('./lib');
+
+updateNotifier({ pkg }).notify();
 
 const cli = meow(
   `
