@@ -27,7 +27,7 @@
     "update-notifier": "^3.0.0"
   },
   "devDependencies": {
-    "husky": "1.2.0",
+    "husky": "2.4.1",
     "jest": "^24.7.1",
     "lint-staged": "8.1.0",
     "prettier": "1.18.2",
