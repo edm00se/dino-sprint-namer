@@ -24,7 +24,7 @@
   "dependencies": {
     "chalk": "2.4.1",
     "meow": "5.0.0",
-    "update-notifier": "^2.5.0"
+    "update-notifier": "^3.0.0"
   },
   "devDependencies": {
     "husky": "1.2.0",
