@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/edm00se/dino-sprint-namer",
   "dependencies": {
-    "chalk": "2.4.1",
+    "chalk": "2.4.2",
     "meow": "5.0.0",
     "update-notifier": "^2.5.0"
   },
