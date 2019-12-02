@@ -1,6 +1,6 @@
 {
   "name": "dino-sprint-namer",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.",
   "main": "lib.js",
   "bin": "cli.js",
