@@ -1,5 +1,5 @@
 # Dino Sprint Namer
-[![NPM Version](https://img.shields.io/npm/v/dino-sprint-namer.svg)](https://www.npmjs.com/package/dino-sprint-namer) [![Build Status](https://travis-ci.org/edm00se/dino-sprint-namer.svg?branch=master)](https://travis-ci.org/edm00se/dino-sprint-namer) [![Code Coverage](https://img.shields.io/codecov/c/github/edm00se/dino-sprint-namer.svg)](https://codecov.io/gh/edm00se/dino-sprint-namer) [![License](https://img.shields.io/npm/l/dino-sprint-namer.svg)](https://www.npmjs.com/package/dino-sprint-namer#license)
+[![NPM Version](https://img.shields.io/npm/v/dino-sprint-namer.svg)](https://www.npmjs.com/package/dino-sprint-namer) ![Node Publish](https://github.com/edm00se/dino-sprint-namer/workflows/Node%20CI/badge.svg) ![Node Build](https://github.com/edm00se/dino-sprint-namer/workflows/Release/badge.svg) [![Code Coverage](https://img.shields.io/codecov/c/github/edm00se/dino-sprint-namer.svg)](https://codecov.io/gh/edm00se/dino-sprint-namer) [![License](https://img.shields.io/npm/l/dino-sprint-namer.svg)](https://www.npmjs.com/package/dino-sprint-namer#license)
 
 Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.
 
