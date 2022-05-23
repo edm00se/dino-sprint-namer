@@ -8,7 +8,8 @@
     "format": "prettier --write \"**/*.js\"",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -22,27 +23,23 @@
   },
   "homepage": "https://github.com/edm00se/dino-sprint-namer",
   "dependencies": {
-    "chalk": "^3.0.0",
-    "meow": "^7.0.1",
-    "update-notifier": "^4.1.0"
+    "chalk": "^4.1.2",
+    "meow": "^9.0.0",
+    "update-notifier": "^5.1.0"
   },
   "devDependencies": {
-    "husky": "^4.2.3",
-    "jest": "^25.1.0",
-    "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
-    "semantic-release": "^17.4.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "semantic-release": "^19.0.2"
   },
   "lint-staged": {
     "*.js": [
       "npm run format",
       "git add",
-      "npm test"
+      "npm test",
+      "prettier --write"
     ]
   }
 }
