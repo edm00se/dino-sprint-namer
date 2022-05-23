@@ -8,7 +8,8 @@
     "format": "prettier --write \"**/*.js\"",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -33,16 +34,12 @@
     "prettier": "^2.6.2",
     "semantic-release": "^19.0.2"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
       "npm run format",
       "git add",
-      "npm test"
+      "npm test",
+      "prettier --write"
     ]
   }
 }
