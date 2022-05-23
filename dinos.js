@@ -767,13 +767,11 @@ module.exports = [
   },
   {
     name: 'Micropachycephalosaurus',
-    url:
-      'http://www.nhm.ac.uk/discover/dino-directory/micropachycephalosaurus.html'
+    url: 'http://www.nhm.ac.uk/discover/dino-directory/micropachycephalosaurus.html'
   },
   {
     name: 'Micropachy-cephalosaurus',
-    url:
-      'http://www.nhm.ac.uk/discover/dino-directory/micropachycephalosaurus.html'
+    url: 'http://www.nhm.ac.uk/discover/dino-directory/micropachycephalosaurus.html'
   },
   {
     name: 'Microraptor',

@@ -35,7 +35,7 @@ function getRandomAdjectiveStartingWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
   return getRandomFromSet(
     ADJECTIVE_DICTIONARY.filter(
-      adj => adj.toLowerCase().charAt(0) === startsWith
+      (adj) => adj.toLowerCase().charAt(0) === startsWith
     )
   );
 }
@@ -43,7 +43,7 @@ function getRandomAdjectiveStartingWith(startingLetter) {
 function getRandomDinosaurNameStartingWith(startingLetter) {
   const startsWith = ensureSingleStartingLetter(startingLetter);
   const nwSet = DINOSAUR_NAMES.filter(
-    dino => dino.name.toLowerCase().charAt(0) === startsWith
+    (dino) => dino.name.toLowerCase().charAt(0) === startsWith
   );
   const res = getRandomFromSet(nwSet);
   return res;
