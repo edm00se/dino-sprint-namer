@@ -1,6 +1,6 @@
 // adjectives, from https://github.com/aceakash/project-name-generator/blob/master/src/adjectives.js
 
-module.exports = [
+export const ADJECTIVE_LIST = [
   'aback',
   'abaft',
   'abandoned',
