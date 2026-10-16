@@ -1,4 +1,4 @@
-const { toTitleCase } = require('./util');
+import { toTitleCase } from './util.js';
 
 describe('utility functions: toTitleCase', () => {
   it('should correct case passed strings', () => {

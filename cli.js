@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-const updateNotifier = require('update-notifier');
-const pkg = require('./package.json');
-const chalk = require('chalk');
-const meow = require('meow');
-const { random, startsWith } = require('./lib');
+import updateNotifier from 'update-notifier';
+import packageJson from './package.json' with { type: 'json' };
+import chalk from 'chalk';
+import meow from 'meow';
+import { random, startsWith } from './lib.js';
 
-updateNotifier({ pkg }).notify();
+updateNotifier({ pkg: packageJson }).notify();
 
 const cli = meow(
   `
@@ -16,6 +16,7 @@ const cli = meow(
     $ node cli.js (A)
 `,
   {
+    importMeta: import.meta,
     alias: {
       h: 'help',
       v: 'version'

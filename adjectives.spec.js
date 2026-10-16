@@ -1,10 +1,10 @@
-const adj = require('./adjectives');
+import { ADJECTIVE_LIST } from './adjectives.js';
 
 describe('Name of the group', () => {
   it('provides an array of strings', () => {
-    expect(adj.every((el) => typeof el === 'string')).toBe(true);
+    expect(ADJECTIVE_LIST.every((el) => typeof el === 'string')).toBe(true);
   });
   it('provides single words', () => {
-    expect(adj.every((el) => !el.includes(' '))).toBe(true);
+    expect(ADJECTIVE_LIST.every((el) => !el.includes(' '))).toBe(true);
   });
 });

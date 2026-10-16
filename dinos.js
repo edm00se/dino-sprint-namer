@@ -1,6 +1,6 @@
 // dino library, built form http://www.nhm.ac.uk/discover/dino-directory/name/name-az-all.html
 
-module.exports = [
+export const DINO_NAMES = [
   {
     name: 'Aardonyx',
     url: 'https://www.nhm.ac.uk/discover/dino-directory/aardonyx.html'

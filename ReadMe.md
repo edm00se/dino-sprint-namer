@@ -79,6 +79,10 @@ To eliminate the madness of semi-randomly selecting dinosaur names as sprint nam
 
 I'm grabbing the list of dinosaurs from [The Natural History Museum of the UK](http://www.nhm.ac.uk/).
 
+## Release Process
+
+The release process now makes use of the Trusted Publisher (OIDC) connection between [the npm registry for this package](https://www.npmjs.com/package/dino-sprint-namer) and [its GitHub repository](https://github.com/edm00se/dino-sprint-namer).
+
 ## License
 
 MIT
