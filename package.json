@@ -4,6 +4,7 @@
   "description": "Provides a dinosaur sprint name in the format of `<adjective> <dinosaur>`.",
   "main": "lib.js",
   "bin": "cli.js",
+  "type": "module",
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
     "test": "jest",
@@ -23,9 +24,9 @@
   },
   "homepage": "https://github.com/edm00se/dino-sprint-namer",
   "dependencies": {
-    "chalk": "^4.1.2",
-    "meow": "^9.0.0",
-    "update-notifier": "^6.0.2"
+    "chalk": "^6.0.1",
+    "meow": "^14.1.0",
+    "update-notifier": "^7.3.1"
   },
   "devDependencies": {
     "husky": "^8.0.3",
