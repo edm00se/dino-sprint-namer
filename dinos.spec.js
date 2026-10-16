@@ -1,14 +1,16 @@
-const dinos = require('./dinos');
+import { DINO_NAMES } from './dinos.js';
 
 describe('dinosaur dictionary structure', () => {
   it('provides an array', () => {
-    expect(Array.isArray(dinos)).toBe(true);
+    expect(Array.isArray(DINO_NAMES)).toBe(true);
   });
   it('provides an array of objects', () => {
-    expect(dinos.every((el) => isObject(el))).toBe(true);
+    expect(DINO_NAMES.every((el) => isObject(el))).toBe(true);
   });
   it('provides an array of objects with names', () => {
-    expect(dinos.every((el) => Object.keys(el).includes('name'))).toBe(true);
+    expect(DINO_NAMES.every((el) => Object.keys(el).includes('name'))).toBe(
+      true
+    );
   });
 });
 

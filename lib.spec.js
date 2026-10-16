@@ -1,4 +1,4 @@
-const { random, startsWith } = require('./lib');
+import { random, startsWith } from './lib.js';
 
 describe('lib structure', () => {
   it('provides expected random', () => {
